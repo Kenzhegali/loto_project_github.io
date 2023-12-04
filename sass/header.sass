@@ -1,0 +1,245 @@
+.header
+    background: #FFFFFF
+
+.wrapper
+    display: flex
+    justify-content: space-between
+    width: 100%
+    max-width: 1110px
+    margin-left: auto
+    margin-right: auto
+
+.logo
+    align-self: center
+
+.nav_bar
+    display: flex
+    justify-content: space-around
+
+.nav
+    display: flex
+    &_link
+        border-radius: 1px
+        display: flex
+        padding: 25px 12px 22px
+        align-items: center
+        font-size: 15px
+        font-weight: 400
+        line-height: 20px
+        color: #000000
+        border: 2px solid #FFFFFF
+        &:hover
+            color: #2B5DA8
+            border-bottom: 2px solid #2B5DA8
+            box-sizing: border-box
+        &:first-child
+            color: #2B5DA8
+            border-bottom: 2px solid #2B5DA8
+            box-sizing: border-box
+
+.menu
+    display: flex
+    align-items: center
+    &_link
+        color: #2B5DA8
+        font-size: 14px
+        font-weight: 700
+        line-height: 10px
+        text-align: center
+
+.notification
+    padding-left: 25px
+
+.lang_switcher
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 15px 0 20px
+    border: 1px
+    border-radius: 50%
+    width: 40px
+    height: 40px
+    flex-shrink: 0
+    text-align: center
+    box-shadow: 0px 5px 20px 0px rgba(43, 93, 168, 0.20)
+
+.menu-icon div
+    width: 30px
+    height: 3px
+    background-color: #2B5DA8
+    margin: 6px 0
+
+.adaptive
+    display: none
+
+.gradient_adaptive
+    display: none
+
+.burger_nav
+    // position: relative
+    z-index: 11
+
+.burge_menu_icon
+    display: none
+    flex-direction: column
+    cursor: pointer
+    padding: 15px
+
+.bar
+    width: 30px
+    height: 3px
+    background-color: #fff
+    margin: 6px 0
+    transition: 0.4s
+
+.burger_menu
+    display: flex
+    justify-content: flex-end
+    background-color: #fff
+    padding: 20px 0
+    z-index: 11
+
+    & ul
+        list-style: none
+        padding: 0
+        margin: 0
+        text-align: center
+    & li
+        border-top: 2px solid rgba(43, 93, 168, 0.1)
+    & a
+        text-decoration: none
+        color: #000
+        padding: 10px 0
+        font-size: 18px
+        display: block
+        &:active
+            background-color: #2B5DA8
+
+@media (max-width: 1025px)
+    .burger_menu-icon
+        display: flex
+
+    .cross .bar:nth-child(1)
+        transform: rotate(-45deg) translate(-7px, 7px)
+
+    .cross .bar:nth-child(2)
+        opacity: 0
+
+    .cross .bar:nth-child(3)
+        transform: rotate(45deg) translate(-5px, -6px)
+
+    .burger_menu
+        border-radius: 25px
+        display: none
+        flex-direction: column
+        position: absolute
+        top: 45px
+        left: 0
+        width: 100%
+        z-index: 1000
+        &.active
+            display: flex
+
+@media ( max-width: 1500px)
+    .wrapper
+        max-width: 1110px
+
+@media ( max-width: 1250px)
+    .wrapper
+        max-width: 880px
+
+@media ( max-width: 1025px)
+    .wrapper
+        display: none
+
+    .header
+        background: none
+
+    .gradient_adaptive
+        display: block
+        position: absolute
+        top: -192px
+        left: 0
+        width: 319px
+        height: 385px
+        flex-shrink: 0
+        border-radius: 385px
+        background: #F3519F
+        filter: blur(100px)
+        z-index: -1 !important
+
+    .adaptive
+        width: 100%
+        max-width: 700px
+        padding: 10px 0
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        color: #fff
+        position: relative
+        z-index: 5
+
+    .burger
+        display: flex
+        justify-content: left
+        align-items: center
+        position: relative
+        z-index: 5
+
+    .logo_adaptive
+        padding: 0 30px
+
+    .logo_text
+        color: #fff
+        font-family: Inter
+        font-size: 11px
+        font-style: normal
+        font-weight: 700
+        line-height: 12.5px
+
+    .burger_rightside
+        display: flex
+        justify-content: right
+        align-items: center
+        text-align: center
+
+    .switcher
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 15px 0 20px
+        border: 1px
+        width: 30px
+        height: 30px
+        font-size: 10px
+        font-family: Inter
+        font-style: normal
+        font-weight: 400
+        line-height: 10px
+        color: #fff
+        flex-shrink: 0
+        text-align: center
+        border-radius: 10px
+        background: rgba(0, 0, 0, 0.15)
+
+@media ( max-width: 890px)
+    .adaptive
+        max-width: 500px
+
+@media ( max-width: 600px)
+    .adaptive
+        max-width: 380px
+
+    .gradient_adaptive
+        top: -298px
+
+@media ( max-width: 425px)
+    .adaptive
+        max-width: 300px
+
+    .gradient_adaptive
+        top: -298px
+        max-width: 300px
+        width: 300px

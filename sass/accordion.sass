@@ -1,0 +1,141 @@
+.accordion
+    max-width: 555px
+    box-sizing: border-box
+
+.accordion_inner
+    background-image: url(../img/question_slot2.svg)
+    background-position: top left
+    background-repeat: no-repeat
+    width: 555px
+    height: 95px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 5px
+    font-size: 35px
+    font-weight: 700
+    line-height: 46px
+
+.accordion_items
+    margin-bottom: 10px
+    width: 100%
+    background-color: #c1236fed
+    border-radius: 15px
+
+.accordion_button
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #bf1a69 !important
+    padding: 25px
+    border-radius: 16px
+    cursor: pointer
+    font-size: 26px
+    font-weight: 600
+    line-height: 29px
+
+.accordion_button img
+    height: 34px
+    width: 34px
+
+.accordion-content
+    color: #fff
+    font-size: 15px
+    font-weight: 400
+    line-height: 22px
+    display: none
+    padding: 25px
+
+.accordion_items.active .accordion-content
+    display: block
+
+.accordion_items.active .rotate_img
+    transform: rotate(45deg)
+
+.rotate_img
+    transition: transform 0.3s ease
+
+@media ( max-width: 1025px)
+    .accordion_button
+        padding: 15px
+        font-size: 20px
+        line-height: 24px
+
+    .accordion-content
+        color: #fff
+        font-size: 15px
+        font-weight: 400
+        line-height: 22px
+        display: none
+        padding: 15px
+
+    .accordion
+        position: relative
+        z-index: 5
+
+    .accord_gradient
+        position: absolute
+        bottom: 15%
+        left: 0
+        display: block
+        width: 300px
+        height: 480px
+        border-radius: 986px
+        background: #F3519F
+        filter: blur(100px)
+        z-index: 1
+
+    .accordion_inner
+        background-image: url(../img/quest_slot2.svg)
+        background-position: top left
+        background-repeat: no-repeat
+        width: 240px
+        height: 120px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 5px
+        font-size: 21px
+        line-height: 27px
+        text-align: center
+
+    .accordion_items
+        margin-bottom: 10px
+        // display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 15px
+        border: 1px
+        border-radius: 16px
+        font-size: 15px
+        font-weight: 600
+        line-height: 16.5px
+
+    .accordion_items img
+        height: 20px
+        width: 20px
+
+@media ( max-width: 600px)
+    .accordion_button
+        padding: 10px
+        font-size: 17px
+        line-height: 20px
+    .accordion-content
+        font-size: 13px
+        line-height: 20px
+        padding: 10px
+
+@media ( max-width: 425px)
+    .accordion_button
+        padding: 5px
+        font-size: 12px
+        line-height: 20px
+
+    .accordion-content
+        font-size: 10px
+        line-height: 20px
+        padding: 5px
+
+    .accordion_items
+        padding: 5px
+        font-size: 12px
